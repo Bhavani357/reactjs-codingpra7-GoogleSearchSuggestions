@@ -1,0 +1,38 @@
+.google-logo {
+  width: 290px;
+  height: 95px;
+  margin-bottom: 20px;
+}
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card-container {
+  width: 30%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+}
+.ul-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  width: 100%;
+  border-style: none;
+}

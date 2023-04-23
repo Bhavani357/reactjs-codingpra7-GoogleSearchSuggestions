@@ -1,0 +1,17 @@
+/* Write your CSS here */
+.arrow {
+  height: 30px;
+  width: 40px;
+  color: aquamarine;
+  cursor: pointer;
+  outline: none;
+}
+.li-container {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.para {
+  font-size: 12px;
+  font-family: 'Roboto';
+}
