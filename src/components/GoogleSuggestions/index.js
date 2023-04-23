@@ -1,36 +1,27 @@
 import './index.css'
-
 import {Component} from 'react'
-
 import SuggestionItem from '../SuggestionItem'
 
 class GoogleSuggestions extends Component {
   state = {searchInput: ''}
 
+  onSelectionItem = value => {
+    this.setState({searchInput: value})
+  }
+
   onchangeSearchInput = event => {
     this.setState({searchInput: event.target.value})
   }
 
-  onSelectionItem = id => {
-    const {suggestionsList} = this.props
-
-    const filteredSuggestionItem = suggestionsList.filter(
-      eachItem => eachItem.id === id,
-    )
-
-    this.setState({searchInput: filteredSuggestionItem})
-  }
-
   render() {
     const {suggestionsList} = this.props
-    const {searchInput, inputList} = this.state
-    console.log(inputList)
+    const {searchInput} = this.state
+
     const searchResults = suggestionsList.filter(eachSuggestion =>
       eachSuggestion.suggestion
         .toLowerCase()
         .includes(searchInput.toLowerCase()),
     )
-    console.log(searchInput)
 
     return (
       <div className="bg-container">
@@ -68,4 +59,5 @@ class GoogleSuggestions extends Component {
     )
   }
 }
+
 export default GoogleSuggestions

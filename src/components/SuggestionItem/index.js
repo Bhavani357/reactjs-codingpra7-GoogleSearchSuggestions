@@ -2,9 +2,9 @@ import './index.css'
 
 const SuggestionItem = props => {
   const {eachItemDetails, onSelectionItem} = props
-  const {id, suggestion} = eachItemDetails
+  const {suggestion} = eachItemDetails
   const onSelect = () => {
-    onSelectionItem(id)
+    onSelectionItem(suggestion)
   }
 
   return (
